@@ -1,36 +1,17 @@
-<!doctype html>
-<html lang="ru">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#020a18">
-<meta name="description" content="Юрист объясняет | AI — юридический помощник">
-<title>Юрист объясняет | AI</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<div id="app">
-  <div class="bg"></div><div class="shade"></div><div class="noise"></div>
-  <header class="top glass">
-    <button class="brand" id="brandHome"><span class="brandIcon">⚖</span><span><small>ЮРИСТ ОБЪЯСНЯЕТ</small><b>AI-помощник</b></span></button>
-    <button class="topUser" data-nav="profile"><span>Д</span></button>
-  </header>
-  <main id="view"></main>
-  <nav id="nav" class="bottom glass">
-    <button data-nav="home" class="active"><span>⌂</span><small>Главная</small></button>
-    <button data-nav="documents"><span>▤</span><small>Документы</small></button>
-    <button data-nav="ai"><span>◉</span><small>AI</small></button>
-    <button data-nav="xray"><span>✦</span><small>Рентген</small></button>
-    <button data-nav="profile"><span>○</span><small>Профиль</small></button>
-  </nav>
+<!doctype html><html lang="ru"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#03132d"><meta name="description" content="Юрист объясняет | AI — юридический помощник в Telegram">
+<title>Юрист объясняет | AI</title><link rel="stylesheet" href="./styles.css">
+</head><body>
+<div id="app"><div class="bg"></div><div class="veil"></div><div class="grain"></div>
+<header class="topbar glass"><div class="brand"><div class="mark">⚖</div><div><div class="overline">ЮРИСТ ОБЪЯСНЯЕТ</div><div class="brand-title">AI-помощник</div></div></div><button class="profile-chip" data-nav="profile"><span>Д</span></button></header>
+<main id="main"></main>
+<nav id="nav" class="bottom glass">
+<button data-nav="home" class="active"><span>⌂</span><small>Главная</small></button><button data-nav="documents"><span>▤</span><small>Документы</small></button><button data-nav="ai"><span>◉</span><small>AI</small></button><button data-nav="tests"><span>◇</span><small>Тесты</small></button><button data-nav="profile"><span>○</span><small>Профиль</small></button></nav>
 </div>
-<div id="sheet" class="sheet" aria-hidden="true"><div class="sheetBg" data-close></div><section class="sheetPanel"><button class="close" data-close>×</button><div id="sheetBody"></div></section></div>
+<div id="modal" class="modal" aria-hidden="true"><div class="modal-backdrop" data-close></div><section class="sheet" role="dialog" aria-modal="true"><button class="close" data-close>×</button><div id="sheet"></div></section></div>
 <div id="toast" class="toast"></div>
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-<script src="app.js" defer></script>
-</body>
-</html>
+<script src="./config.js"></script><script src="./app.js" defer></script>
+</body></html>

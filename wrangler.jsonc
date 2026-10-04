@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developers.cloudflare.com/workers/wrangler/configuration/schema.json",
+  "name": "yurist-explains-ai-api",
+  "main": "worker.js",
+  "compatibility_date": "2026-10-01",
+  "vars": {
+    "ALLOWED_ORIGIN": "https://kojenkovd.github.io"
+  },
+  "secrets": {
+    "required": ["GEMINI_API_KEY", "TELEGRAM_BOT_TOKEN"]
+  }
+}
