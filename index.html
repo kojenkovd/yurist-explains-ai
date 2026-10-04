@@ -1,145 +1,36 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#06142b" />
-  <meta name="description" content="Юрист объясняет AI — анализ и создание документов в Telegram." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#02132f">
+  <meta name="description" content="Юрист объясняет | AI — юридический помощник в Telegram">
   <title>Юрист объясняет | AI</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-<div id="app" class="app-shell">
-  <div class="bg-scene" aria-hidden="true"></div>
-  <div class="bg-vignette" aria-hidden="true"></div>
-  <div class="noise" aria-hidden="true"></div>
-
-  <header class="topbar glass">
-    <div class="brand">
-      <div class="brand-badge">⚖</div>
-      <div>
-        <div class="brand-overline">ЮРИСТ ОБЪЯСНЯЕТ</div>
-        <div class="brand-name">AI-помощник</div>
-      </div>
-    </div>
-    <a class="top-contact" href="https://t.me/CHANGE_ME" target="_blank" rel="noopener" data-paid-link>
-      <span class="pulse"></span> Юрист
-    </a>
+<div id="app">
+  <div class="bg"></div><div class="bgShade"></div><div class="glow glowA"></div><div class="glow glowB"></div>
+  <header class="top glass">
+    <button class="brandBtn" data-screen="home" aria-label="На главную">
+      <span class="brandIcon">⚖</span><span class="brandText"><small>ЮРИСТ ОБЪЯСНЯЕТ</small><b>AI-помощник</b></span>
+    </button>
+    <button class="avatar" data-screen="profile" aria-label="Профиль"><span>Д</span></button>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <div class="kicker"><span class="live-dot"></span> ОНЛАЙН • РФ</div>
-        <h1>Юрист объясняет.<br><span>Без сложных слов.</span></h1>
-        <p>Проверьте документ, создайте юридический текст или опишите ситуацию — приложение поможет разложить её по полочкам.</p>
-        <div class="hero-cta-row">
-          <button class="btn btn-primary" data-open="analyze"><span>✦</span> Проверить документ</button>
-          <button class="btn btn-ghost" data-open="ask"><span>◉</span> Задать вопрос</button>
-        </div>
-        <div class="hero-trust">
-          <span>🔒 файлы не публикуются</span>
-          <span>⚡ быстрый предварительный разбор</span>
-        </div>
-      </div>
-    </section>
+  <main id="view" class="view"></main>
 
-    <section class="section reveal">
-      <div class="section-title-row">
-        <div>
-          <div class="section-kicker">ИНСТРУМЕНТЫ</div>
-          <h2>Что делаем прямо сейчас</h2>
-        </div>
-        <span class="free-chip">БЕСПЛАТНО</span>
-      </div>
-
-      <div class="feature-grid">
-        <button class="feature-card tall" data-open="analyze">
-          <div class="feature-icon">⌘</div>
-          <div class="feature-body"><b>Анализ документа</b><span>PDF, DOCX, TXT или фото. Найдём формулировки, даты и пункты для внимания.</span></div>
-          <div class="feature-arrow">↗</div>
-        </button>
-        <button class="feature-card" data-open="create">
-          <div class="feature-icon">✎</div>
-          <div class="feature-body"><b>Создать документ</b><span>Претензия, заявление, жалоба, обращение и другие тексты.</span></div>
-          <div class="feature-arrow">↗</div>
-        </button>
-        <button class="feature-card" data-open="ask">
-          <div class="feature-icon">◌</div>
-          <div class="feature-body"><b>Спросить AI</b><span>Опишите, что произошло. Ответ будет понятным и структурированным.</span></div>
-          <div class="feature-arrow">↗</div>
-        </button>
-        <button class="feature-card special" data-open="xray">
-          <div class="feature-icon">✦</div>
-          <div class="feature-body"><b>Юридический рентген</b><span>Наглядная карточка с пунктами для внимания и итогом проверки.</span></div>
-          <div class="feature-arrow">↗</div>
-        </button>
-      </div>
-    </section>
-
-    <section class="section reveal">
-      <div class="section-title-row">
-        <div>
-          <div class="section-kicker">ПЛАТНЫЕ УСЛУГИ</div>
-          <h2>Когда нужен реальный юрист</h2>
-        </div>
-      </div>
-      <div class="service-list">
-        <article class="service-card">
-          <div class="service-icon">♛</div>
-          <div class="service-content"><b>Проверка юристом</b><span>Ручной разбор вашего документа и комментарии по ключевым пунктам.</span></div>
-          <a class="service-btn" href="https://t.me/CHANGE_ME" target="_blank" rel="noopener" data-paid-link>Заказать</a>
-        </article>
-        <article class="service-card">
-          <div class="service-icon">✎</div>
-          <div class="service-content"><b>Подготовка документа</b><span>Индивидуальная претензия, заявление или иной текст под вашу ситуацию.</span></div>
-          <a class="service-btn" href="https://t.me/CHANGE_ME" target="_blank" rel="noopener" data-paid-link>Заказать</a>
-        </article>
-        <article class="service-card">
-          <div class="service-icon">⚡</div>
-          <div class="service-content"><b>Срочная консультация</b><span>Когда вопрос нельзя оставлять на потом.</span></div>
-          <a class="service-btn" href="https://t.me/CHANGE_ME" target="_blank" rel="noopener" data-paid-link>Написать</a>
-        </article>
-      </div>
-    </section>
-
-    <section class="section reveal">
-      <div class="xray-banner glass" data-open="xray">
-        <div>
-          <div class="section-kicker">🔥 ВИРУСНАЯ ФИЧА</div>
-          <h3>«Юридический рентген»</h3>
-          <p>Сделайте карточку с результатом проверки и отправьте её другу.</p>
-        </div>
-        <div class="xray-orb">✦</div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div>Юрист объясняет | AI</div>
-      <a href="https://t.me/CHANGE_ME" target="_blank" rel="noopener" data-paid-link>Платные услуги в Telegram →</a>
-      <div class="made-by">Made by <b>kojenkov</b></div>
-    </footer>
-  </main>
-
-  <nav class="bottom-nav glass">
-    <button class="nav-item active" data-nav="home"><span>⌂</span><small>Главная</small></button>
-    <button class="nav-item" data-nav="docs"><span>▤</span><small>Документы</small></button>
-    <button class="nav-item" data-nav="ai"><span>◉</span><small>AI</small></button>
-    <button class="nav-item" data-nav="tests"><span>◇</span><small>Тесты</small></button>
-    <button class="nav-item" data-nav="profile"><span>○</span><small>Профиль</small></button>
+  <nav class="nav glass" id="nav">
+    <button data-screen="home" class="active"><span>⌂</span><small>Главная</small></button>
+    <button data-screen="documents"><span>▤</span><small>Документы</small></button>
+    <button data-screen="ai"><span>◉</span><small>AI</small></button>
+    <button data-screen="xray"><span>✦</span><small>Рентген</small></button>
+    <button data-screen="profile"><span>○</span><small>Профиль</small></button>
   </nav>
 </div>
 
-<div id="modal" class="modal" aria-hidden="true">
-  <div class="modal-bg" data-close></div>
-  <section class="modal-sheet" role="dialog" aria-modal="true">
-    <button class="modal-close" data-close aria-label="Закрыть">×</button>
-    <div id="modal-content"></div>
-  </section>
-</div>
+<div id="sheet" class="sheet" aria-hidden="true"><div class="sheetBackdrop" data-close></div><section class="sheetPanel" role="dialog" aria-modal="true"><button class="close" data-close>×</button><div id="sheetBody"></div></section></div>
+<div id="toast" class="toast"></div>
 
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
