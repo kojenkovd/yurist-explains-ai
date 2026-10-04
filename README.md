@@ -1,18 +1,20 @@
-# Юрист объясняет AI — V7 FINAL
+# Юрист объясняет | AI — V8
 
-Telegram Mini App / LegalTech для граждан РФ.
+Premium Telegram Mini App / web dashboard for citizens in Russia.
 
 ## Frontend
-- GitHub Pages
-- `index.html` содержит основной дизайн и UI-логику, чтобы не зависеть от CSS-файла
-- `app.js` — функции анализа, создания документов, AI-помощника, истории и рентгена
-- `background.jpg` — визуал Фемиды
-- `config.js` — публичные настройки, включая Telegram `@kojenkovv`
 
-## Анализ файлов
-В браузере поддерживаются PDF, DOCX, TXT, JPG, PNG и WEBP. PDF/DOCX извлекаются через публичные библиотеки, изображения — через Tesseract.js.
+`index.html` is self-contained and uses `background.jpg`. It can be published as a static GitHub Pages site.
 
-## AI backend
-`worker.js` — защищённый прокси для Gemini API. Секрет `GEMINI_API_KEY` должен храниться в Cloudflare Worker Secret и никогда не публиковаться в GitHub.
+## Serverless AI
 
-Перед реальным использованием юридические выводы необходимо дополнительно проверять специалистом; автоматический скрининг не является юридическим заключением.
+`worker.js` is a Cloudflare Workers backend with a Workers AI binding named `AI`. It exposes:
+
+- `POST /analyze` — structured document analysis;
+- `POST /chat` — legal AI chat;
+- `POST /generate` — document generation;
+- `GET /health` — health check.
+
+The frontend currently uses local extraction/screening by default. Set `API_ENDPOINT` in `index.html` (or wire `config.example.js`) after deploying the Worker.
+
+Never put AI tokens or other secrets in GitHub Pages or browser JavaScript. Use Cloudflare bindings/secrets on the server side.
