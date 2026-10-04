@@ -1,0 +1,5 @@
+config.js
+.dev.vars*
+.env*
+node_modules/
+.wrangler/
