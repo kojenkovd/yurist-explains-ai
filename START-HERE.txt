@@ -1,0 +1,12 @@
+ЮРИСТ ОБЪЯСНЯЕТ | AI — СТАРТ
+
+1) Удали содержимое GitHub-репозитория.
+2) Нажми Add file -> Upload files.
+3) Перетащи ВСЕ файлы из этой папки.
+4) Commit changes.
+5) Открой https://kojenkovd.github.io/yurist-explains-ai/?v=final
+
+НЕ НУЖНО раскладывать файлы по папкам.
+
+После публикации напиши: ГОТОВО.
+Следующий этап — Cloudflare Worker + настоящий AI.
