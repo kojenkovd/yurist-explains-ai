@@ -1,5 +1,4 @@
-config.js
-.dev.vars*
-.env*
+.dev.vars
+.env
 node_modules/
 .wrangler/

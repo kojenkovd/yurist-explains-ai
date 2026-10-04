@@ -1,5 +1,6 @@
-// Безопасные настройки интерфейса. Секреты сюда НЕ добавлять.
-window.JE_CONFIG = {
-  PAID_TELEGRAM: '',
-  AI_ENDPOINT: ''
+window.JEAI_CONFIG = {
+  brand: 'Юрист объясняет AI',
+  paidTelegram: 'kojenkovv',
+  aiEndpoint: '',
+  maxFileMb: 10
 };
